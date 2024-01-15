@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/main',
       repo: 'git@github.com:Phobia-Cosmos/tutorial-pt-2.git',
       path: '/root',
-      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
+      'post-deploy': '/root/.nvm/versions/node/v21.5.0/bin/npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }
 };
